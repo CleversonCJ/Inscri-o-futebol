@@ -3,11 +3,13 @@ ps = float(input('Peso: '))
 dd = float(input('Idade: '))
 imc = ps / (al ** 2)
 print('Seu IMC é de: {:.1f}'.format(imc))
+
 if imc <= 24.9:
     ts = float(input('Você treina quantas vezes por semana? '))
     mst = float(input('Aproximadamente quantos minutos por sessão de treino? '))
     tms = ts * mst
     print('Você treina {:.0f} minutos por semana!'.format(tms))
+    
     if tms >= 300:
         print('Prabéns, você passou em todos os nossos testes, agora você fará um teste pessoal em nossa sede, favor comparecer ao endereço: Rua dos Atletas, 43, Bairro do Futebol. Nos vemos lá!')
     elif tms < 300:
