@@ -1,0 +1,21 @@
+al = float(input('Altura: '))
+ps = float(input('Peso: '))
+idd = int(input('Idade: '))
+IMC = ps / (al ** 2)
+print('Seu IMC é de {:.1f}'.format(IMC))
+
+if IMC > 24.9:
+    print('Normalize sua forma física e inscreva-se novamente!!')
+else:
+    print('Você passou no primeiro teste, vamos para o segundo!!')
+
+if IMC <= 24.9:
+    tps = int(input('Quantas vezes você treina por semana? '))
+    mps = int(input('Aproximadamente quantos minutos por sessão de treino? '))
+    mul = tps * mps
+    print('Você treina {:.0f} minutos por semana!'.format(mul))
+    
+    if mul >= 300:
+        print('Parabéns, você passou em todos os nossos testes, agora você fará um teste pessoal em nossa sede, favor comparecer ao endereço: Rua dos Atletas, 43, Bairro do Futebol. Nos vemos lá!')
+    else:
+        print('Muito obrigado, agradecemos a sua participação!')
